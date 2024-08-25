@@ -8,6 +8,7 @@ import React from 'react'
 const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'Posts', href: '/posts' },
+    { label: 'Create Post', href: '/createpost' },
 ]
 
 export default function Header() {
