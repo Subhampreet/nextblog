@@ -6,13 +6,6 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 export default async function page() {
-
-  const {isAuthenticated} =  getKindeServerSession()
-
-  if(!(await isAuthenticated())){
-    redirect("/api/auth/login?post_login_redirect_url=/createpost")
-  }
-
   return (
     <div className='text-center pt-16'>
         <h1 className='text-4xl md:text-5xl font-bold mb-5'>Create Post</h1>
